@@ -93,18 +93,6 @@ public class PropertyPlaceholderConfigurerTests {
 
 	@Test
 	public void resolveFromSystemProperties() {
-		MutablePropertySources mutablePropertySources = new MutablePropertySources();
-		PropertySourcesPropertyResolver propertyResolver = new PropertySourcesPropertyResolver(null);
-
-		propertyResolver.setPlaceholderPrefix("{");
-		propertyResolver.setPlaceholderSuffix("}");
-		propertyResolver.setValueSeparator("");
-		String ss = "{sss";
-		propertyResolver.resolvePlaceholders(ss);
-		propertyResolver.resolveRequiredPlaceholders(ss);
-//		PropertyPlaceholderHelper.PlaceholderResolver helper = new PropertyPlaceholderHelper.PlaceholderResolver("${", "}", ":", false);
-//		helper.resolvePlaceholder()
-//		this.valueResolver.resolveStringValue(strVal);
 		System.setProperty("otherKey", "systemValue");
 		p1BeanDef = rootBeanDefinition(TestBean.class)
 				.addPropertyValue("name", "${" + P1 + "}")
