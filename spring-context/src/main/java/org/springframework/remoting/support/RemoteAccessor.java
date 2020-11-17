@@ -21,11 +21,12 @@ import org.springframework.util.Assert;
 /**
  * Abstract base class for classes that access a remote service.
  * Provides a "serviceInterface" bean property.
- *
+ * 用于访问远程服务的类的抽象基类。
  * <p>Note that the service interface being used will show some signs of
  * remotability, like the granularity of method calls that it offers.
  * Furthermore, it has to have serializable arguments etc.
- *
+ * 请注意，所使用的服务接口将显示一些可删除的迹象，比如它提供的方法调用的粒度。
+ * 此外，它必须有可序列化的参数等等。
  * <p>Accessors are supposed to throw Spring's generic
  * {@link org.springframework.remoting.RemoteAccessException} in case
  * of remote invocation failure, provided that the service interface

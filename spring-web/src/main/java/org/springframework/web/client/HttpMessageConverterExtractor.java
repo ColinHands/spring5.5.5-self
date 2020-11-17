@@ -35,6 +35,7 @@ import org.springframework.util.Assert;
 /**
  * Response extractor that uses the given {@linkplain HttpMessageConverter entity converters}
  * to convert the response into a type {@code T}.
+ * 响应提取器，使用给定的{@linkplain HttpMessageConverter 实体转换器}将响应转换为类型{@code T}。
  *
  * @author Arjen Poutsma
  * @since 3.0

@@ -53,6 +53,7 @@ import org.springframework.util.ClassUtils;
 /**
  * Default implementation of {@link CodecConfigurer.DefaultCodecs} that serves
  * as a base for client and server specific variants.
+ * 默认实现{@link CodecConfigurer。DefaultCodecs},作为客户端和服务器特定变体的基础。
  *
  * @author Rossen Stoyanchev
  * @author Sebastien Deleuze

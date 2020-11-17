@@ -26,6 +26,7 @@ import org.springframework.util.ClassUtils;
 /**
  * Generic support base class for remote accessor and exporters,
  * providing common bean ClassLoader handling.
+ * 泛型支持远程访问器和导出器的基类，提供通用的bean类加载器处理。
  *
  * @author Juergen Hoeller
  * @since 2.5.2

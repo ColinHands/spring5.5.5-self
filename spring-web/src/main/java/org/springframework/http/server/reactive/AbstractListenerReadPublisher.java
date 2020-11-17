@@ -33,6 +33,7 @@ import org.springframework.util.Assert;
 /**
  * Abstract base class for {@code Publisher} implementations that bridge between
  * event-listener read APIs and Reactive Streams.
+ * 连接事件侦听器读取api和响应流的{@code Publisher}实现的抽象基类。
  *
  * <p>Specifically a base class for reading from the HTTP request body with
  * Servlet 3.1 non-blocking I/O and Undertow XNIO as well as handling incoming
@@ -112,6 +113,7 @@ public abstract class AbstractListenerReadPublisher<T> implements Publisher<T> {
 	 * Invoked when reading is possible, either in the same thread after a check
 	 * via {@link #checkOnDataAvailable()}, or as a callback from the underlying
 	 * container.
+	 * 可以在读取时调用，可以在同一个线程中通过{@link #checkOnDataAvailable()}检查后调用，也可以作为底层容器的回调调用
 	 */
 	public final void onDataAvailable() {
 		rsReadLogger.trace(getLogPrefix() + "onDataAvailable");

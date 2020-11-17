@@ -23,10 +23,12 @@ import org.springframework.core.io.buffer.DataBuffer;
 
 /**
  * An "reactive" HTTP input message that exposes the input as {@link Publisher}.
+ * 一个“反应性”HTTP输入消息，它将输入公开为{@link Publisher}。
  *
  * <p>Typically implemented by an HTTP request on the server-side or a response
  * on the client-side.
  *
+ * 通常由服务器端上的HTTP请求或客户端上的响应实现。
  * @author Arjen Poutsma
  * @since 5.0
  */

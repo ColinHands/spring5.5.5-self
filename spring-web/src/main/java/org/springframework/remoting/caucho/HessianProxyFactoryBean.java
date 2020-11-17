@@ -23,6 +23,7 @@ import org.springframework.lang.Nullable;
 /**
  * {@link FactoryBean} for Hessian proxies. Exposes the proxied service
  * for use as a bean reference, using the specified service interface.
+ * 海赛代理。使用指定的服务接口公开代理的服务，以作为bean引用使用。
  *
  * <p>Hessian is a slim, binary RPC protocol.
  * For information on Hessian, see the

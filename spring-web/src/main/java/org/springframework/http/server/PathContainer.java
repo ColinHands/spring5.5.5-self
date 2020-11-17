@@ -24,6 +24,7 @@ import org.springframework.util.MultiValueMap;
  * Structured representation of a URI path whose elements have been pre-parsed
  * into a sequence of {@link Separator Separator} and {@link PathSegment
  * PathSegment} elements.
+ * URI路径的结构化表示，其元素已被预解析为{@link Separator Separator}和{@link PathSegment PathSegment}元素序列。
  *
  * <p>An instance of this class can be created via {@link #parsePath(String)}.
  * Each {@link PathSegment PathSegment} exposes its structure decoded

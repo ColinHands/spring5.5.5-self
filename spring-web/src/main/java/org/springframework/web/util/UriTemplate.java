@@ -32,6 +32,7 @@ import org.springframework.util.Assert;
 /**
  * Represents a URI template. A URI template is a URI-like String that contains variables
  * enclosed by braces ({@code {}}) which can be expanded to produce an actual URI.
+ * 表示URI模板。URI模板是一个类似URI的字符串，它包含用大括号({@code {}})括起来的变量，可以展开以生成实际的URI。
  *
  * <p>See {@link #expand(Map)}, {@link #expand(Object[])}, and {@link #match(String)}
  * for example usages.

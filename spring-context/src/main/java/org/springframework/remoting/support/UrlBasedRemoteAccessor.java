@@ -21,6 +21,8 @@ import org.springframework.beans.factory.InitializingBean;
 /**
  * Abstract base class for classes that access remote services via URLs.
  * Provides a "serviceUrl" bean property, which is considered as required.
+ * 通过url访问远程服务的类的抽象基类。
+ * 提供一个“serviceUrl”bean属性，它被认为是必需的。
  *
  * @author Juergen Hoeller
  * @since 15.12.2003

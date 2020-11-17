@@ -24,6 +24,7 @@ import reactor.core.publisher.Mono;
 /**
  * Sub-interface of {@code ReactiveOutputMessage} that has support for "zero-copy"
  * file transfers.
+ * 支持“零拷贝”文件传输的{@code ReactiveOutputMessage}的子接口。
  *
  * @author Arjen Poutsma
  * @author Juergen Hoeller

@@ -33,6 +33,7 @@ import org.springframework.lang.Nullable;
 /**
  * Strategy for reading from a {@link ReactiveHttpInputMessage} and decoding
  * the stream of bytes to Objects of type {@code <T>}.
+ * 从{@link ReactiveHttpInputMessage}读取并将字节流解码为{@code <T>}类型的对象的策略。
  *
  * @author Rossen Stoyanchev
  * @author Arjen Poutsma
