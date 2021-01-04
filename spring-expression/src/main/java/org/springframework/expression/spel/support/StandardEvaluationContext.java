@@ -41,10 +41,14 @@ import org.springframework.util.Assert;
  * A powerful and highly configurable {@link EvaluationContext} implementation.
  * This context uses standard implementations of all applicable strategies,
  * based on reflection to resolve properties, methods and fields.
+ * 一个强大且高度可配置的{@link EvaluationContext}实现。
+ * 这个上下文使用所有适用策略的标准实现，基于反射来解析属性、方法和字段。
  *
  * <p>For a simpler builder-style context variant for data-binding purposes,
  * consider using {@link SimpleEvaluationContext} instead which allows for
  * opting into several SpEL features as needed by specific evaluation cases.
+ * 对于用于数据绑定的更简单的构建器样式上下文变量，可以考虑使用{@link SimpleEvaluationContext}，
+ * 这样可以根据具体的计算用例选择几个SpEL特性。
  *
  * @author Andy Clement
  * @author Juergen Hoeller

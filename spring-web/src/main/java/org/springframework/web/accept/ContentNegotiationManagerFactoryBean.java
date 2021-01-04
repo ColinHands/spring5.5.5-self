@@ -125,6 +125,8 @@ public class ContentNegotiationManagerFactoryBean
 	 * <p><strong>Note:</strong> use of this method is mutually exclusive with
 	 * use of all other setters in this class which customize a default, fixed
 	 * set of strategies. See class level doc for more details.
+	 * 设置要使用的策略的确切列表。
+	 * 此方法的使用与该类中自定义缺省固定策略集的所有其他setter的使用是相互排斥的。有关更多细节，请参阅类级别文档。
 	 * @param strategies the strategies to use
 	 * @since 5.0
 	 */
@@ -135,6 +137,7 @@ public class ContentNegotiationManagerFactoryBean
 	/**
 	 * Whether the path extension in the URL path should be used to determine
 	 * the requested media type.
+	 * 是否应使用URL路径中的路径扩展来确定所请求的媒体类型。
 	 * <p>By default this is set to {@code true} in which case a request
 	 * for {@code /hotels.pdf} will be interpreted as a request for
 	 * {@code "application/pdf"} regardless of the 'Accept' header.
@@ -200,6 +203,7 @@ public class ContentNegotiationManagerFactoryBean
 	/**
 	 * Indicate whether to use the Java Activation Framework as a fallback option
 	 * to map from file extensions to media types.
+	 * 指示是否使用Java激活框架作为回退选项来从文件扩展名映射到媒体类型。
 	 * @deprecated as of 5.0, in favor of {@link #setUseRegisteredExtensionsOnly(boolean)}, which
 	 * has reverse behavior.
 	 */

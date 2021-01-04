@@ -37,11 +37,11 @@ import org.springframework.web.util.WebUtils;
  * content on the response. This ETag is compared to the {@code If-None-Match}
  * header of the request. If these headers are equal, the response content is
  * not sent, but rather a {@code 304 "Not Modified"} status instead.
- *
+ * 它根据响应的内容生成{@code ETag}值。将此ETag与请求的{@code If-None-Match}头文件进行比较。如果这些头是相等的，响应内容不发送，而是{@code 304“未修改”}状态代替。
  * <p>Since the ETag is based on the response content, the response
  * (e.g. a {@link org.springframework.web.servlet.View}) is still rendered.
  * As such, this filter only saves bandwidth, not server performance.
- *
+ * 因为ETag是基于响应内容的，所以响应(例如{@link org.springframework.web.servlet.View})仍然被呈现。因此，这个过滤器只节省带宽，而不是服务器性能。
  * <p><b>NOTE:</b> As of Spring Framework 5.0, this filter uses request/response
  * decorators built on the Servlet 3.1 API.
  *

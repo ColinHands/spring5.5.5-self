@@ -88,9 +88,11 @@ public class SessionAttributesHandler {
 	/**
 	 * Whether the attribute name or type match the names and types specified
 	 * via {@code @SessionAttributes} on the underlying controller.
+	 * 属性名称或类型是否与通过基础控制器上的{@code @SessionAttributes}指定的名称和类型匹配。
 	 * <p>Attributes successfully resolved through this method are "remembered"
 	 * and subsequently used in {@link #retrieveAttributes(WebRequest)} and
 	 * {@link #cleanupAttributes(WebRequest)}.
+	 * 通过这种方法成功解析的属性会被“记住”，并随后在{@link #retrieveAttributes(WebRequest)}和中使用
 	 * @param attributeName the attribute name to check
 	 * @param attributeType the type for the attribute
 	 */

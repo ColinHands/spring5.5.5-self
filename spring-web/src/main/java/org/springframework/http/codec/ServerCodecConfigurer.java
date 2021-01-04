@@ -21,6 +21,7 @@ import org.springframework.core.codec.Encoder;
 /**
  * Extension of {@link CodecConfigurer} for HTTP message reader and writer
  * options relevant on the server side.
+ * 扩展{@link CodecConfigurer}用于服务器端相关的HTTP消息读取器和写入器选项。
  *
  * <p>HTTP message readers for the following are registered by default:
  * <ul>{@code byte[]}

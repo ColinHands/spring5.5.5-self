@@ -87,6 +87,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 	 * @param annotationNotRequired if "true", non-simple method arguments and
 	 * return values are considered model attributes with or without a
 	 * {@code @ModelAttribute} annotation
+	 * 如果"true"，非简单方法参数和返回值被认为是模型属性，无论是否带有
 	 */
 	public ModelAttributeMethodProcessor(boolean annotationNotRequired) {
 		this.annotationNotRequired = annotationNotRequired;
@@ -112,6 +113,8 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 	 * @throws BindException if data binding and validation result in an error
 	 * and the next method parameter is not of type {@link Errors}
 	 * @throws Exception if WebDataBinder initialization fails
+	 * 从模型中解析参数，如果没有找到，如果它可用，则用它的默认值实例化它。
+	 * 然后，模型属性通过数据绑定填充请求值，如果{@code @java.validation. optional验证。Valid}出现在参数中。
 	 */
 	@Override
 	@Nullable
@@ -365,6 +368,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 
 	/**
 	 * Validate the specified candidate value if applicable.
+	 * 如果适用，验证指定的候选值。
 	 * <p>The default implementation checks for {@code @javax.validation.Valid},
 	 * Spring's {@link org.springframework.validation.annotation.Validated},
 	 * and custom annotations whose name starts with "Valid".
@@ -433,6 +437,7 @@ public class ModelAttributeMethodProcessor implements HandlerMethodArgumentResol
 
 	/**
 	 * Whether to raise a fatal bind exception on validation errors.
+	 * 是否在验证错误时引发致命绑定异常。
 	 * @param parameter the method parameter declaration
 	 * @return {@code true} if the next method parameter is not of type {@link Errors}
 	 * @since 5.0

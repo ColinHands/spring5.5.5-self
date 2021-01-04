@@ -40,11 +40,13 @@ public class PathPatternParser {
 	/**
 	 * Whether a {@link PathPattern} produced by this parser should should
 	 * automatically match request paths with a trailing slash.
+	 * 由解析器生成的{@link PathPattern}是否应该自动匹配请求路径，并带有末尾的斜杠。
 	 *
 	 * <p>If set to {@code true} a {@code PathPattern} without a trailing slash
 	 * will also match request paths with a trailing slash. If set to
 	 * {@code false} a {@code PathPattern} will only match request paths with
 	 * a trailing slash.
+	 * 如果设置为{@code false}， {@code PathPattern}将只匹配带有末尾斜杠的请求路径。
 	 *
 	 * <p>The default is {@code true}.
 	 */

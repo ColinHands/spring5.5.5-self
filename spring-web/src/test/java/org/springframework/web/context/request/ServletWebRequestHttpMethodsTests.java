@@ -309,6 +309,7 @@ public class ServletWebRequestHttpMethodsTests {
 		long currentEpoch = currentDate.getTime();
 		long oneMinuteAgo = currentEpoch - (1000 * 60);
 		servletRequest.setMethod("PUT");
+		// 被用来做断点传输 没有被修改才能被继续传输
 		servletRequest.addHeader("If-UnModified-Since", oneMinuteAgo);
 
 		assertTrue(request.checkNotModified(currentEpoch));

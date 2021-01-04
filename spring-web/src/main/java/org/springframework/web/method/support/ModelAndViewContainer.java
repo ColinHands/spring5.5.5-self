@@ -150,7 +150,7 @@ public class ModelAndViewContainer {
 	}
 
 	/**
-	 * Whether to use the default model or the redirect model.
+	 * Whether to use the default model or the redirect model. 是使用默认模型还是重定向模型。
 	 */
 	private boolean useDefaultModel() {
 		return (!this.redirectModelScenario || (this.redirectModel == null && !this.ignoreDefaultModelOnRedirect));
@@ -183,6 +183,7 @@ public class ModelAndViewContainer {
 	/**
 	 * Whether the controller has returned a redirect instruction, e.g. a
 	 * "redirect:" prefixed view name, a RedirectView instance, etc.
+	 * 控制器是否返回重定向指令，例如a
 	 */
 	public void setRedirectModelScenario(boolean redirectModelScenario) {
 		this.redirectModelScenario = redirectModelScenario;
@@ -218,6 +219,7 @@ public class ModelAndViewContainer {
 
 	/**
 	 * Whether binding is disabled for the given model attribute.
+	 * 是否为给定的模型属性禁用绑定。
 	 * @since 4.3
 	 */
 	public boolean isBindingDisabled(String name) {

@@ -35,6 +35,7 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * Specialized {@link org.springframework.validation.DataBinder} to perform data
  * binding from URL query params or form data in the request data to Java objects.
+ * 专业{@link org.springframework.validation。将URL查询参数或请求数据中的表单数据绑定到Java对象。
  *
  * @author Rossen Stoyanchev
  * @since 5.0
@@ -64,6 +65,7 @@ public class WebExchangeDataBinder extends WebDataBinder {
 
 	/**
 	 * Bind query params, form data, and or multipart form data to the binder target.
+	 * 将查询参数、表单数据和或多部分表单数据绑定到绑定器目标。
 	 * @param exchange the current exchange.
 	 * @return a {@code Mono<Void>} when binding is complete
 	 */

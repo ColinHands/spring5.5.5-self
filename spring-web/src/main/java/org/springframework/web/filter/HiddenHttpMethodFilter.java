@@ -40,7 +40,8 @@ import org.springframework.web.util.WebUtils;
  * to pass the "real" HTTP method along. This filter reads that parameter and changes
  * the {@link HttpServletRequestWrapper#getMethod()} return value accordingly.
  * Only {@code "PUT"}, {@code "DELETE"} and {@code "PATCH"} HTTP methods are allowed.
- *
+ * {@link javax.servlet。将发布的方法参数转换为HTTP方法，
+ * 可通过{@link HttpServletRequest#getMethod()}检索。由于浏览器目前只支持GET和POST，一种常见的技术(例如Prototype库使用的技术)是使用带有附加隐藏表单字段({@code _method})的普通POST。
  * <p>The name of the request parameter defaults to {@code _method}, but can be
  * adapted via the {@link #setMethodParam(String) methodParam} property.
  *

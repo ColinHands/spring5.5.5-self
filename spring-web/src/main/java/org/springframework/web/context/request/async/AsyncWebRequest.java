@@ -73,6 +73,7 @@ public interface AsyncWebRequest extends NativeWebRequest {
 	/**
 	 * Dispatch the request to the container in order to resume processing after
 	 * concurrent execution in an application thread.
+	 * 将请求分派到容器，以便在应用程序线程中并发执行后恢复处理。
 	 */
 	void dispatch();
 

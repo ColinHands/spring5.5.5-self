@@ -46,6 +46,7 @@ import org.springframework.web.server.session.WebSessionManager;
  * <p>One is to assemble a processing chain that consists of a target {@link WebHandler},
  * then decorated with a set of {@link WebFilter WebFilters}, then further decorated with
  * a set of {@link WebExceptionHandler WebExceptionHandlers}.
+ * 一种是组装一个由目标{@link WebHandler}组成的处理链，然后使用一组{@link WebFilter WebFilters}装饰，然后进一步使用一组{@link WebExceptionHandler WebExceptionHandlers}装饰。
  *
  * <p>The second purpose is to adapt the resulting processing chain to an {@link HttpHandler}:
  * the lowest-level reactive HTTP handling abstraction which can then be used with any of the
